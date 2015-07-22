@@ -5,20 +5,13 @@ package com.github.lbroudoux.dsl.eip.impl;
 import com.github.lbroudoux.dsl.eip.EIPModel;
 import com.github.lbroudoux.dsl.eip.EipPackage;
 import com.github.lbroudoux.dsl.eip.Route;
-
 import java.util.Collection;
-
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
-import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
+import org.eclipse.emf.internal.cdo.CDOObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,120 +26,118 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class EIPModelImpl extends MinimalEObjectImpl.Container implements EIPModel {
+public class EIPModelImpl extends CDOObjectImpl implements EIPModel {
 	/**
-    * The cached value of the '{@link #getOwnedRoutes() <em>Owned Routes</em>}' containment reference list.
-    * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-    * @see #getOwnedRoutes()
-    * @generated
-    * @ordered
-    */
-	protected EList<Route> ownedRoutes;
-
-	/**
-    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-    * @generated
-    */
+	 * @generated
+	 */
 	protected EIPModelImpl() {
-      super();
-   }
+		super();
+	}
 
 	/**
-    * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-    * @generated
-    */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-      return EipPackage.Literals.EIP_MODEL;
-   }
+		return EipPackage.Literals.EIP_MODEL;
+	}
 
 	/**
-    * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-    * @generated
-    */
+	 * @generated
+	 */
+	@Override
+	protected int eStaticFeatureCount() {
+		return 0;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
 	public EList<Route> getOwnedRoutes() {
-      if (ownedRoutes == null) {
-         ownedRoutes = new EObjectContainmentEList<Route>(Route.class, this, EipPackage.EIP_MODEL__OWNED_ROUTES);
-      }
-      return ownedRoutes;
-   }
+		return (EList<Route>)eDynamicGet(EipPackage.EIP_MODEL__OWNED_ROUTES, EipPackage.Literals.EIP_MODEL__OWNED_ROUTES, true, true);
+	}
 
 	/**
-    * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-    * @generated
-    */
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-      switch (featureID) {
-         case EipPackage.EIP_MODEL__OWNED_ROUTES:
-            return ((InternalEList<?>)getOwnedRoutes()).basicRemove(otherEnd, msgs);
-      }
-      return super.eInverseRemove(otherEnd, featureID, msgs);
-   }
+		switch (featureID) {
+			case EipPackage.EIP_MODEL__OWNED_ROUTES:
+				return ((InternalEList<?>)getOwnedRoutes()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
 	/**
-    * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-    * @generated
-    */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-      switch (featureID) {
-         case EipPackage.EIP_MODEL__OWNED_ROUTES:
-            return getOwnedRoutes();
-      }
-      return super.eGet(featureID, resolve, coreType);
-   }
+		switch (featureID) {
+			case EipPackage.EIP_MODEL__OWNED_ROUTES:
+				return getOwnedRoutes();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-    * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-    * @generated
-    */
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-      switch (featureID) {
-         case EipPackage.EIP_MODEL__OWNED_ROUTES:
-            getOwnedRoutes().clear();
-            getOwnedRoutes().addAll((Collection<? extends Route>)newValue);
-            return;
-      }
-      super.eSet(featureID, newValue);
-   }
+		switch (featureID) {
+			case EipPackage.EIP_MODEL__OWNED_ROUTES:
+				getOwnedRoutes().clear();
+				getOwnedRoutes().addAll((Collection<? extends Route>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-    * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-    * @generated
-    */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-      switch (featureID) {
-         case EipPackage.EIP_MODEL__OWNED_ROUTES:
-            getOwnedRoutes().clear();
-            return;
-      }
-      super.eUnset(featureID);
-   }
+		switch (featureID) {
+			case EipPackage.EIP_MODEL__OWNED_ROUTES:
+				getOwnedRoutes().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-    * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-    * @generated
-    */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-      switch (featureID) {
-         case EipPackage.EIP_MODEL__OWNED_ROUTES:
-            return ownedRoutes != null && !ownedRoutes.isEmpty();
-      }
-      return super.eIsSet(featureID);
-   }
+		switch (featureID) {
+			case EipPackage.EIP_MODEL__OWNED_ROUTES:
+				return !getOwnedRoutes().isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 } //EIPModelImpl

@@ -11,5 +11,6 @@ Export-Package: com.github.lbroudoux.dsl.eip,
  com.github.lbroudoux.dsl.eip.impl,
  com.github.lbroudoux.dsl.eip.util
 Require-Bundle: org.eclipse.core.runtime,
- org.eclipse.emf.ecore;visibility:=reexport
+ org.eclipse.emf.ecore;visibility:=reexport,
+ org.eclipse.emf.cdo;visibility:=reexport
 Bundle-ActivationPolicy: lazy

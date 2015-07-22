@@ -4,12 +4,7 @@ package com.github.lbroudoux.dsl.eip.impl;
 
 import com.github.lbroudoux.dsl.eip.EipPackage;
 import com.github.lbroudoux.dsl.eip.Resequencer;
-
-import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.ecore.EClass;
-
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,137 +21,108 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class ResequencerImpl extends AggregatorImpl implements Resequencer {
    /**
-    * The default value of the '{@link #isStreamSequences() <em>Stream Sequences</em>}' attribute.
-    * <!-- begin-user-doc -->
+	 * The default value of the '{@link #isStreamSequences() <em>Stream Sequences</em>}' attribute.
+	 * <!-- begin-user-doc -->
     * <!-- end-user-doc -->
-    * @see #isStreamSequences()
-    * @generated
-    * @ordered
-    */
+	 * @see #isStreamSequences()
+	 * @generated
+	 * @ordered
+	 */
    protected static final boolean STREAM_SEQUENCES_EDEFAULT = false;
 
    /**
-    * The cached value of the '{@link #isStreamSequences() <em>Stream Sequences</em>}' attribute.
-    * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
     * <!-- end-user-doc -->
-    * @see #isStreamSequences()
-    * @generated
-    * @ordered
-    */
-   protected boolean streamSequences = STREAM_SEQUENCES_EDEFAULT;
-
-   /**
-    * <!-- begin-user-doc -->
-    * <!-- end-user-doc -->
-    * @generated
-    */
+	 * @generated
+	 */
    protected ResequencerImpl() {
-      super();
-   }
+		super();
+	}
 
    /**
-    * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
     * <!-- end-user-doc -->
-    * @generated
-    */
+	 * @generated
+	 */
    @Override
    protected EClass eStaticClass() {
-      return EipPackage.Literals.RESEQUENCER;
-   }
+		return EipPackage.Literals.RESEQUENCER;
+	}
 
    /**
-    * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
     * <!-- end-user-doc -->
-    * @generated
-    */
+	 * @generated
+	 */
    public boolean isStreamSequences() {
-      return streamSequences;
-   }
+		return (Boolean)eDynamicGet(EipPackage.RESEQUENCER__STREAM_SEQUENCES, EipPackage.Literals.RESEQUENCER__STREAM_SEQUENCES, true, true);
+	}
 
    /**
-    * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
     * <!-- end-user-doc -->
-    * @generated
-    */
+	 * @generated
+	 */
    public void setStreamSequences(boolean newStreamSequences) {
-      boolean oldStreamSequences = streamSequences;
-      streamSequences = newStreamSequences;
-      if (eNotificationRequired())
-         eNotify(new ENotificationImpl(this, Notification.SET, EipPackage.RESEQUENCER__STREAM_SEQUENCES, oldStreamSequences, streamSequences));
-   }
+		eDynamicSet(EipPackage.RESEQUENCER__STREAM_SEQUENCES, EipPackage.Literals.RESEQUENCER__STREAM_SEQUENCES, newStreamSequences);
+	}
 
    /**
-    * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
     * <!-- end-user-doc -->
-    * @generated
-    */
+	 * @generated
+	 */
    @Override
    public Object eGet(int featureID, boolean resolve, boolean coreType) {
-      switch (featureID) {
-         case EipPackage.RESEQUENCER__STREAM_SEQUENCES:
-            return isStreamSequences();
-      }
-      return super.eGet(featureID, resolve, coreType);
-   }
+		switch (featureID) {
+			case EipPackage.RESEQUENCER__STREAM_SEQUENCES:
+				return isStreamSequences();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
    /**
-    * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
     * <!-- end-user-doc -->
-    * @generated
-    */
+	 * @generated
+	 */
    @Override
    public void eSet(int featureID, Object newValue) {
-      switch (featureID) {
-         case EipPackage.RESEQUENCER__STREAM_SEQUENCES:
-            setStreamSequences((Boolean)newValue);
-            return;
-      }
-      super.eSet(featureID, newValue);
-   }
+		switch (featureID) {
+			case EipPackage.RESEQUENCER__STREAM_SEQUENCES:
+				setStreamSequences((Boolean)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
    /**
-    * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
     * <!-- end-user-doc -->
-    * @generated
-    */
+	 * @generated
+	 */
    @Override
    public void eUnset(int featureID) {
-      switch (featureID) {
-         case EipPackage.RESEQUENCER__STREAM_SEQUENCES:
-            setStreamSequences(STREAM_SEQUENCES_EDEFAULT);
-            return;
-      }
-      super.eUnset(featureID);
-   }
+		switch (featureID) {
+			case EipPackage.RESEQUENCER__STREAM_SEQUENCES:
+				setStreamSequences(STREAM_SEQUENCES_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
    /**
-    * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
     * <!-- end-user-doc -->
-    * @generated
-    */
+	 * @generated
+	 */
    @Override
    public boolean eIsSet(int featureID) {
-      switch (featureID) {
-         case EipPackage.RESEQUENCER__STREAM_SEQUENCES:
-            return streamSequences != STREAM_SEQUENCES_EDEFAULT;
-      }
-      return super.eIsSet(featureID);
-   }
-
-   /**
-    * <!-- begin-user-doc -->
-    * <!-- end-user-doc -->
-    * @generated
-    */
-   @Override
-   public String toString() {
-      if (eIsProxy()) return super.toString();
-
-      StringBuffer result = new StringBuffer(super.toString());
-      result.append(" (streamSequences: ");
-      result.append(streamSequences);
-      result.append(')');
-      return result.toString();
-   }
+		switch (featureID) {
+			case EipPackage.RESEQUENCER__STREAM_SEQUENCES:
+				return isStreamSequences() != STREAM_SEQUENCES_EDEFAULT;
+		}
+		return super.eIsSet(featureID);
+	}
 
 } //ResequencerImpl

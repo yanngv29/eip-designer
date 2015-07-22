@@ -2,7 +2,7 @@
  */
 package com.github.lbroudoux.dsl.eip;
 
-import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.cdo.CDOObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -12,7 +12,8 @@ import org.eclipse.emf.ecore.EObject;
  *
  * @see com.github.lbroudoux.dsl.eip.EipPackage#getAdapter()
  * @model
+ * @extends CDOObject
  * @generated
  */
-public interface Adapter extends EObject {
+public interface Adapter extends CDOObject {
 } // Adapter
